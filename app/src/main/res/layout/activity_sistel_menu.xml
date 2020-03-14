@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SistelMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistel Kocak"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/kalkulator"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="7dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/calculator"
+                    android:tint="#fff" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator"
+                android:layout_below="@id/kalkulator"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/grafik"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/kalkulator"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="7dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_graphic_eq_black_24dp"
+                    android:tint="#fff" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grafik"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="sans-serif"
+                android:text="Grafik"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

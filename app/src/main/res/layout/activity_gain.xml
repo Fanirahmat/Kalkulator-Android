@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="sans-serif"
+                android:text="Sistel Kocak"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/input"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/input"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="Daya Input (Watt)"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:paddingBottom="17dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/output"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/output"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:hint="Daya Output (Watt)"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:paddingBottom="17dp"
+                    android:textColor="#fff"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/konversi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Konversi"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
